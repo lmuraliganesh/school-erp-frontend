@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Inter:wght@400;500&family=IBM+Plex+Mono:wght@600;700&display=swap");
+
+.dash {
+  font-family: "Inter", sans-serif;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.dash-nav {
+  background: #1b2430;
+  color: #f6f1e4;
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 8px 8px 0 0;
+}
+
+.dash-brand {
+  font-family: "Fraunces", serif;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.dash-links {
+  display: flex;
+  gap: 24px;
+  font-size: 14px;
+  color: #c9c2ae;
+}
+
+.dash-link {
+  cursor: default;
+  padding-bottom: 4px;
+}
+
+.dash-link.active {
+  color: #e8a33d;
+  border-bottom: 2px solid #e8a33d;
+}
+
+.dash-admin {
+  font-size: 14px;
+  color: #f6f1e4;
+}
+
+.dash-body {
+  background: #f6f1e4;
+  padding: 28px 24px;
+  border-radius: 0 0 8px 8px;
+}
+
+.dash-greeting {
+  font-size: 14px;
+  color: #4b5563;
+  margin: 0 0 20px;
+}
+
+.dash-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.stat-card {
+  background: #fafaf7;
+  border-bottom: 3px solid #e8a33d;
+  padding: 18px 20px;
+  border-radius: 4px;
+}
+
+.stat-card-muted {
+  border-bottom-color: #b4b2a9;
+}
+
+.stat-number {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 34px;
+  font-weight: 700;
+  color: #1b2430;
+}
+
+.stat-card-muted .stat-number {
+  color: #888780;
+}
+
+.stat-label {
+  font-size: 11px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: #4b5563;
+  margin-top: 6px;
+}
+
+.dash-panel {
+  margin-top: 24px;
+  background: #fafaf7;
+  border-radius: 4px;
+  padding: 18px 20px;
+}
+
+.dash-panel-title {
+  font-size: 12px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: #7a1f2b;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.dash-panel-item {
+  border-left: 3px solid #7a1f2b;
+  padding-left: 12px;
+}
+
+.dash-panel-item-title {
+  font-size: 14px;
+  color: #1b2430;
+}
+
+.dash-panel-item-sub {
+  font-size: 12px;
+  color: #888780;
+  margin-top: 2px;
+}
