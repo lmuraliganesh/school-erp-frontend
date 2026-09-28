@@ -26,7 +26,7 @@ function Dashboard({ adminName, users }: DashboardProps) {
           <Link to="/classes" className="dash-link">Classes</Link>
           <Link to="/subjects" className="dash-link">Subjects</Link>
           <Link to="/timetable" className="dash-link">Timetable</Link>
-          <span className="dash-link">Announcements</span>
+          <Link to="/announcements" className="dash-link">Announcements</Link>
         </div>
         <div className="dash-admin">{adminName}</div>
       </div>

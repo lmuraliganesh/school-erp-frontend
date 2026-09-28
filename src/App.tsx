@@ -6,6 +6,7 @@ import ProtectedRoute from "./ProtectedRoute";
 import ClassesPage from "./ClassesPage";
 import SubjectsPage from "./SubjectPage";
 import TimetablePage from "./TimetablePage";
+import AnnouncementPage from "./AnnouncementPage";
 
 
 
@@ -51,6 +52,15 @@ function App() {
              </ProtectedRoute>
             }
          />
+
+         <Route
+  path="/announcements"
+  element={
+    <ProtectedRoute token={token}>
+      <AnnouncementPage token={token as string} />
+    </ProtectedRoute>
+  }
+/>
         <Route path="/" element={<Navigate to="/login" replace />} />
       </Routes>
     </BrowserRouter>
