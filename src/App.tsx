@@ -7,6 +7,7 @@ import ClassesPage from "./ClassesPage";
 import SubjectsPage from "./SubjectPage";
 import TimetablePage from "./TimetablePage";
 import AnnouncementPage from "./AnnouncementPage";
+import AttendancePage from "./AttendancePage";
 
 
 
@@ -58,6 +59,14 @@ function App() {
   element={
     <ProtectedRoute token={token}>
       <AnnouncementPage token={token as string} />
+    </ProtectedRoute>
+  }
+/>
+         <Route
+  path="/attendance"
+  element={
+    <ProtectedRoute token={token}>
+      <AttendancePage token={token as string} />
     </ProtectedRoute>
   }
 />
