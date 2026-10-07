@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Navbar from "./Navbar";
 
 interface SubjectItem {
     id : number;
@@ -60,6 +61,7 @@ function SubjectsPage({token}:SubjectPagesProps){
     };
     return (
     <div style={{ padding: "20px" }}>
+         <Navbar />
       <h2>Subjects Management</h2>
 
       {/* Form for adding a subject */}

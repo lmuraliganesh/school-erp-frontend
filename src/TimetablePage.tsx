@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import Navbar from "./Navbar";
 
 interface ClassItem{
     id : number;
@@ -125,6 +126,7 @@ const getSubjectName = (id: number) => {
 
 return (
     <div style={{ padding: "2.5rem" }}>
+        <Navbar />
       <h1>Timetable</h1>
 
       {/* Conditionally render the form only if the user is an admin */}

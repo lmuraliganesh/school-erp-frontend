@@ -8,6 +8,7 @@ import SubjectsPage from "./SubjectPage";
 import TimetablePage from "./TimetablePage";
 import AnnouncementPage from "./AnnouncementPage";
 import AttendancePage from "./AttendancePage";
+import Navbar from "./Navbar";
 
 
 

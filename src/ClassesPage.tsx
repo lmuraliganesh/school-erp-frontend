@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import Navbar from "./Navbar";
 
 interface ClassItem {
   id: number;
@@ -65,6 +66,7 @@ const handleCreateClass = async () => {
 
  return (
   <div style={{ padding: "2rem" }}>
+    <Navbar />
     <h1>Classes</h1>
 
     <div style={{ marginBottom: "1.5rem" }}>

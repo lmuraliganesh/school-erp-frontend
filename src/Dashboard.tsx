@@ -1,5 +1,5 @@
 import "./Dashboard.css";
-import { Link } from "react-router-dom";
+import Navbar from "./Navbar";
 
 interface User {
   id: number;
@@ -19,18 +19,7 @@ function Dashboard({ adminName, users }: DashboardProps) {
 
   return (
     <div className="dash">
-      <div className="dash-nav">
-        <div className="dash-brand">School ERP</div>
-        <div className="dash-links">
-          <span className="dash-link active">Dashboard</span>
-          <Link to="/classes" className="dash-link">Classes</Link>
-          <Link to="/subjects" className="dash-link">Subjects</Link>
-          <Link to="/timetable" className="dash-link">Timetable</Link>
-          <Link to="/announcements" className="dash-link">Announcements</Link>
-          <Link to="/attendance" className="dash-link">Attendance</Link>
-        </div>
-        <div className="dash-admin">{adminName}</div>
-      </div>
+      <Navbar />
 
       <div className="dash-body">
         <p className="dash-greeting">Hello, {adminName}</p>

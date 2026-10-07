@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import Navbar from "./Navbar";
 
 interface ClassItem {
   id: number;
@@ -116,6 +117,7 @@ function AttendancePage({ token }: AttendancePageProps) {
  } 
  return (
   <div style={{ padding: "2rem" }}>
+    <Navbar />
     <h1>Attendance</h1>
 
    {(isAdmin || isTeacher) && (

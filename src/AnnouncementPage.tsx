@@ -1,4 +1,5 @@
 import { useState,useEffect } from "react";
+import Navbar from "./Navbar";
 
 interface AnnouncementItem{
     id : number;
@@ -70,6 +71,7 @@ function AnnouncementPage({token}: AnnouncementPageProps){
 
     return (
         <div style={{ padding: "2.5rem" }}>
+            <Navbar />
     <h1>Announcements</h1>
 
     {(isAdmin || isTeacher) && (
@@ -87,6 +89,7 @@ function AnnouncementPage({token}: AnnouncementPageProps){
       onChange={(e) => setContent(e.target.value)}
     />
     <button onClick={handleCreateAnnouncement}>Post</button>
+    
   </div>
     )}
  <h3>Recent announcements</h3>

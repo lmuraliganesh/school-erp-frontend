@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Inter:wght@400;500&family=IBM+Plex+Mono:wght@600;700&display=swap");
+
+.dash-nav {
+  background: #1b2430;
+  color: #f6f1e4;
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 8px 8px 0 0;
+}
+
+.dash-brand {
+  font-family: "Fraunces", serif;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.dash-links {
+  display: flex;
+  gap: 24px;
+  font-size: 14px;
+  color: #c9c2ae;
+}
+
+.dash-link {
+  cursor: default;
+  padding-bottom: 4px;
+}
+
+.dash-link.active {
+  color: #e8a33d;
+  border-bottom: 2px solid #e8a33d;
+}
+
+.dash-admin {
+  font-size: 14px;
+  color: #f6f1e4;
+}
